@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Penyewaan Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulir Penyewaan Mobil</h1>
+    </header>
+    <main>
+        <form action="proses_penyewaan.php" method="POST" enctype="multipart/form-data">
+            <table style="width: 100%; text-align: left;">
+                <tr>
+                    <td><label for="Nama">Nama Penyewa:</label></td>
+                    <td><input type="text" name="Nama" id="Nama" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Identitas">Identitas</label></td>
+                    <td><input type="file" name="identitas" id="identitas" required></td>
+                </tr>
+                <tr>
+                    <td><label for="No_Telepon">Kontak:</label></td>
+                    <td><input type="text" name="No_Telepon" id="No_Telepon" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nama_mobil">Pilih Mobil:</label></td>
+                    <td>
+                        <select name="nama_mobil" id="nama_mobil" required>
+                            <option value="Toyota Avanza">Toyota Avanza - Rp 500.000/day</option>
+                            <option value="Honda Brio">Honda Brio - Rp 400.000/day</option>
+                            <option value="Mitsubishi Pajero">Mitsubishi Pajero - Rp 1.000.000/day</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal_pinjam">Tanggal Pinjam:</label></td>
+                    <td><input type="date" name="tanggal_pinjam" id="tanggal_pinjam" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal_kembali">Tanggal Kembali:</label></td>
+                    <td><input type="date" name="tanggal_kembali" id="tanggal_kembali" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Sewa Mobil</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 PT. Bendi Car</p>
+    </footer>
+</body>
+</html>
